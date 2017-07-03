@@ -1,0 +1,5 @@
+ISSS (IoT Semantic Script Server) is, a service designed to run in the Fog layer to handle incoming requests from constrained clients (in the perception layer) of the Internet of Things. Please refer to the related paper to understand more. 
+
+To change the network interface, implement the abstract class (NetworkInterface). A sample implementation for NRF is included as NrfInterface. To work with the Nrf implementation, remove the comments in each method and configure the pins accordingly. For the sake of simplification, running on a standalone computer, an incoming packet is simulated in the receive method. 
+
+Please check the DoS-IL repository for sample scripts. 
