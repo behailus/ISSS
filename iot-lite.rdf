@@ -509,18 +509,13 @@ IoT Lite Ontology is created to be used with a common taxonomy to describe the U
         <rdfs:comment xml:lang="en">Tag Device such as QR code or bar code.</rdfs:comment>
     </owl:Class>
     
-	<owl:Class rdf:about="&iot-lite;CompositeDevice">
-        <rdfs:subClassOf rdf:resource="&ssn;Device"/>
-        <rdfs:comment xml:lang="en">Composite of sensor(s), actuator(s) and tag(s).</rdfs:comment>
-    </owl:Class>
-
 	<owl:Class rdf:about="&iot-lite;SampleWear">
-        <rdfs:instanceOf rdf:resource="&iot-lite;CompositeDevice"/>
+        <rdfs:instanceOf rdf:resource="&ssn;Device"/>
         <rdfs:comment xml:lang="en">SampleWear is name of the composite device.</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="&iot-lite;SampleWear">
-        <rdfs:hasCOD>/common/SampleWear.dsil</rdfs:hasCOD>
+        <rdfs:locatedAt>/common/SampleWear.dsil</rdfs:locatedAt>
         <rdfs:comment xml:lang="en">Location of the configuration file.</rdfs:comment>
     </owl:Class>
 
