@@ -41,7 +41,7 @@ class NameResolver:
         self.iotGraph.parse(self.rdfPath)
     
     def Resolve(self,name):
-        self.queryText = 'select ?s where { <http://purl.oclc.org/NET/UNIS/fiware/iot-lite#'+name+'>  rdfs:hasCOD  ?s}'
+        self.queryText = 'select ?s where { <http://purl.oclc.org/NET/UNIS/fiware/iot-lite#'+name+'>  rdfs:locatedAt  ?s}'
         result = self.iotGraph.query(self.queryText)
         if len(result) > 0:
             for row in result:
